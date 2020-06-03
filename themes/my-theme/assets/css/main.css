@@ -1,0 +1,69 @@
+/*
+Theme Name: my-theme
+Author: Brian
+Version: 1.0
+*/
+
+body {
+  padding-top: .8rem;
+  font-family: 'Montserrat','Helvetica Neue', Arial,sans-serif;
+  color: red;
+}
+
+h1 {
+  font-size: 188px;
+}
+
+h2 {
+  margin-top: 125px;
+}
+
+
+.toggle-nav {
+       display: inline-block !important;
+       float: right;
+       margin: 25px;
+       font-size: 2em;
+       transition: color linear 0.15s;
+   }
+
+   a.toggle-nav:link,
+   a.toggle-nav:visited,
+   a.toggle-nav:hover,
+   a.toggle-nav:active {
+       text-decoration: none;
+       color: #fff;
+   }
+
+   .menu.main {
+    display: inline-block;
+    position: relative;
+    background: #fff;
+    text-align: left;
+}
+
+.menu.main ul {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    top: 0px;
+    right: 0px;
+    z-index: 999;
+    padding-right: 15px;
+    background: #fff;
+}
+
+.menu.main ul li {
+    float: none;
+    display: block;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    min-width: 200px;
+    background: #fff;
+    text-align: right;
+}
+
+.main.menu li:after {
+    content: none;
+}
